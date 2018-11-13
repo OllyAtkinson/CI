@@ -1,0 +1,15 @@
+body{
+    background-color: #F5F5F4;
+    border-style: none;
+    border-color: #F5F5F4;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    color: #11152D;
+}
+.buttonSubmit{
+    color: white;
+    background-color: #FAB523;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}

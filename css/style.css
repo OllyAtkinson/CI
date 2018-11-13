@@ -1,0 +1,130 @@
+body{
+    background-color: #F5F5F4;
+    border-style: solid;
+    border-color: #11152D;
+    margin: 10px 10px 10px 10px;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    color: #11152D;
+}
+.button1{
+    color: white;
+    background-color: #FAB523;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.button2{
+    color: white;
+    background-color: #0E4388;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.button3{
+    color: white;
+    background-color: #D20E68;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.buttonSubmit{
+    color: white;
+    background-color: #FAB523;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.button-warning{
+    color: green;
+    background-color: #0E4388;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.glyphicon-pencil{
+    color: #F5F5F4;
+}
+.glyphicon-question-sign{
+    color: #F5F5F4;
+}
+.btn-info{
+    background-color: #06783F;
+}
+.btn-danger{
+    background-color: #B11E2A;
+}
+
+/* Buttons and Colours for comm types */
+.btn-A{
+    background-color: #E87406;
+}
+.btn-P{
+    background-color: #8D4896;
+}
+.btn-E{
+    background-color: #C1D112;
+}
+.btn-I{
+    background-color: #857650;
+}
+
+.bg-A{
+    background-color: #E87406;
+}
+.bg-P{
+    background-color: #8D4896;
+}
+.bg-E{
+    background-color: #C1D112;
+}
+.bg-I{
+    background-color: #857650;
+}
+
+
+.well-image{
+    width: 100%;
+    height: 162px;
+}
+.top-buffer{
+    margin-top: 30px;
+}
+.answer{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+}
+.answer:hover{
+    cursor: pointer;
+}
+.image-answer{
+    cursor: pointer;
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.image-answer img{
+    width: 100%;
+    height: auto;
+}
+.image-selected{
+    border: 3px solid #56afdc;
+}
+.image-answer.bg-success{
+    border: 3px solid #06783F;
+}
+.image-answer.bg-danger{
+    border: 3px solid #B11E2A;
+}
+/* This stylesheet sets the width of all images to 100%: */
+.page-header img{
+    width: 60%;
+    height: 25%;
+}
