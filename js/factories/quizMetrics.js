@@ -5,7 +5,7 @@
 
     /*
      * creating a factory called quizMetrics and attaching that to the 
-     * turtleFacts module. 
+     * commsFacts module. 
      *
      * This factories job is to hold all the data the pertains to the quiz. 
      * This could be:
@@ -23,7 +23,7 @@
      *          
      */
     angular
-        .module("turtleFacts")
+        .module("commFacts")
         .factory("quizMetrics", QuizMetrics);
 
         /*

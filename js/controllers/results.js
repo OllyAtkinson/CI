@@ -4,10 +4,10 @@
 (function(){
 
     /*
-     * attaching results controller function to the turtleFacts module 
+     * attaching results controller function to the commFacts module 
      */
     angular
-        .module("turtleFacts")
+        .module("commFacts")
         .controller("resultsCtrl", ResultsController);
 
     /*
@@ -261,7 +261,7 @@
         doc.addImage(imgData, 'PNG', 10, 10, 190, 50);
         doc.setFontSize(24)
         doc.setFontType('bold')
-        doc.text('Your Communication Type is:   ' + FS, 20, 70);
+        doc.text('Your Communication Type is:  ' + FS, 20, 70);
         doc.setFontSize(16) 
         doc.setFontType('normal')
         doc.text('Your Extrovert Score is: ' + A, 20, 80);

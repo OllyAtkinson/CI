@@ -4,10 +4,10 @@
 (function(){
 
     /*
-     * Declaring a factory service as part of the existing turtleFacts Module.
+     * Declaring a factory service as part of the existing commFacts Module.
      */
     angular
-        .module("turtleFacts")
+        .module("commFacts")
         .factory("DataService", DataService);
 
     /*
@@ -22,7 +22,7 @@
          */
 
         var dataObj = {
-            turtlesData: turtlesData,
+            commsData: commsData,
             quizQuestions: quizQuestions,
             //correctAnswers: correctAnswers,
             A: A,
@@ -59,10 +59,10 @@
      *                          - Whether the user got the question correct or 
      *                              not
      *
-     * The final turtleData variable hold the information that will be 
+     * The final commsData variable hold the information that will be 
      * displayed in the list view when the app loads. This includes the name 
-     * and an image of each turtle as well as other information such as the 
-     * location and the size of the turtles
+     * and an image of each comm as well as other information such as the 
+     * location and the size of the comms
      *
      */
      //MARKING THE CORRECT ANSWERS, SEE quizmetrics.js FOR METHODS 
@@ -384,7 +384,7 @@
 
 
 
-    var turtlesData = [
+    var commsData = [
         {
             type: "Targeted",
             image_url: "introvert.jpeg",

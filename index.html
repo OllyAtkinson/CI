@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="turtleFacts">
+<html lang="en" ng-app="commFacts">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,33 +39,33 @@
                     <strong>Start Test</strong>
                 </button>
             </form>
-            <!-- row to contain the list of turtles -->
+            <!-- row to contain the list of commss -->
             <div class="row">
                 <!-- ng-repeat allows areas of markup to be repeated for a set number of times using model data -->
 		        <!-- in this case it is a property on the view model called data which is being filtered using the search -->
 		        <!-- property on the model -->
-                <div class="col-sm-6" ng-repeat="turtle in list.data | filter:list.search">
+                <div class="col-sm-6" ng-repeat="comm in list.data | filter:list.search">
                 	<!-- using a bootstrap well to style -->
                     <div class="well well-sm">
                         <div class="row">
                             <div class="col-md-6">
                             	<!-- ng-src instead of src to allow correct functionality with angular -->
-                                <img ng-src="{{turtle.image_url}}" 
+                                <img ng-src="{{comm.image_url}}" 
                                     class="img-rounded img-responsive well-image">
                             </div>
                             <div class="col-md-6">
                             	<!-- ng-src instead of src to allow correct functionality with angular -->
-                                <h4><strong>{{turtle.type}}</strong></h4>
+                                <h4><strong>{{comm.type}}</strong></h4>
                                 <!-- more angular data binding -->
-                                <p><strong>Also Known As: </strong>{{turtle.known}}</p>
-                                <p><strong>Advantages: </strong>{{turtle.advantage}}</p>
-                                <p><strong>Disadvantages: </strong>{{turtle.disadvantage}}</p>
+                                <p><strong>Also Known As: </strong>{{comm.known}}</p>
+                                <p><strong>Advantages: </strong>{{comm.advantage}}</p>
+                                <p><strong>Disadvantages: </strong>{{comm.disadvantage}}</p>
                                 <!-- ng-click is an angular directive to allow click events within angular -->
                         		<!-- data-toggle and data-target are bootstrap attributes to trigger the popup modal -->
                                 <button class="button2"
                                     data-toggle="modal"
-                                    data-target="#turtle-info"
-                                    ng-click="list.changeActiveTurtle(turtle)">Learn More</button>
+                                    data-target="#comm-info"
+                                    ng-click="list.changeActiveComm(comm)">Learn More</button>
                             </div>
                         </div><!-- row -->
                     </div><!-- well -->
@@ -73,30 +73,30 @@
             </div>
 
 			<!-- the markup for the modal -->
-            <div class="modal" id="turtle-info">
+            <div class="modal" id="comm-info">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                         	<!-- more usage of angular data binding -->
-                            <h2>{{list.activeTurtle.type}}</h2>
+                            <h2>{{list.activeComm.type}}</h2>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2">
                                 	<!-- ng-src used again instead of src -->
-                                    <img ng-src="{{list.activeTurtle.image_url}}" class="img-rounded img-responsive">
+                                    <img ng-src="{{list.activeComm.image_url}}" class="img-rounded img-responsive">
                                 </div>
                             </div>
                             <div class="row top-buffer">
                                 <div class="col-md-6">
                                 	<!-- angular data binding -->
-                                    <p><strong>Also Known As: </strong>{{list.activeTurtle.known}}</p>
-                                    <p><strong>Advantages: </strong>{{list.activeTurtle.advantage}}</p>
-                                    <p><strong>Disadvantages: </strong>{{list.activeTurtle.disadvantage}}</p>
+                                    <p><strong>Also Known As: </strong>{{list.activeComm.known}}</p>
+                                    <p><strong>Advantages: </strong>{{list.activeComm.advantage}}</p>
+                                    <p><strong>Disadvantages: </strong>{{list.activeComm.disadvantage}}</p>
                                 </div>
                                 <div class="col-xs-12 top-buffer">
                                 	<!-- angular data binding and data-dismiss for bootstrap -->
-                                    <p>{{list.activeTurtle.description}}</p>
+                                    <p>{{list.activeComm.description}}</p>
                                     <button class="button3" 
                                         data-dismiss="modal">Close</button>
                                 </div>
