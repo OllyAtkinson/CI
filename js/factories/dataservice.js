@@ -200,7 +200,7 @@
                     answer: "I am usually a bit difficult to get to know in interpersonal and business situations"
                 },
                 {
-                    answer: "I feel like i am easy to get to know in both interpersonal and business situations"
+                    answer: "I feel like I am easy to get to know in both interpersonal and business situations"
                 },
             ],
             selected: null,
@@ -214,7 +214,7 @@
             text: "Which statement do you associate closest to?",
             possibilities: [
                 {
-                    answer: "I usually make decisions deliverately, more slowly and with forethought when I know my team will be affected"
+                    answer: "I usually make decisions deliberately, more slowly and with forethought when I know my team will be affected"
                 },
                 {
                     answer: "I usually make decisions quickly, spontaneously and in the heat of the moment"

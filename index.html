@@ -300,6 +300,7 @@
                		<!-- the score is displayed using simple angular expressions -->
                                         <!-- here we call the function that makes PDF -->
                     <h1><strong>Final Results: {{results.findCommType()}}</strong></h1>
+                    <h3>{{results.findCommInfo()}}</h3>
                     <!--   ADD THE CORRECT COMM TYPE HERE -->
                     <!--h2>Extrovert Scores: {{results.quizMetrics.ACorrect}} / {{results.dataService.quizQuestions.length}}</h2>
                     <h2>Introvert Scores: {{results.quizMetrics.PCorrect}} / {{results.dataService.quizQuestions.length}}</h2>
@@ -307,7 +308,7 @@
                     <h2>Passive Scores: {{results.quizMetrics.ICorrect}} / {{results.dataService.quizQuestions.length}}</h2-->
                     <h2>{{results.calculateX()}}</h2>
                     <h2>{{results.calculateY()}}</h2>
-                    <button ng-click="results.getPDF()">Download PDF</button>
+                    <button class="button3" ng-click="results.getPDF()">Download Results</button>
                     <h3>{{results.getBarChart()}}</h3>
                     <!--h3>{{results.getPDF()}}</h3-->
 

@@ -61,7 +61,7 @@ if(isset($_POST['submitted']))
               <div class='short_explanation'>* required fields</div>
               <div><span class='error'><?php //echo $formproc->GetErrorMessage(); ?></span></div>-->
                 <div class="col=xs=12">
-                  <h2>Please enter your details to view your results</h2>
+                  <h2>Please enter your details before viewing your results</h2>
                 </div>
 
                 <div class="form-group">
@@ -102,7 +102,7 @@ if(isset($_POST['submitted']))
                 <a href='javascript: refresh_captcha_img();'><br>Click here to refresh</a></div>
                 </div>
 
-                <div class="text-center"><button class ="buttonSubmit" type="submit" name='Submit' value='Submit'>Recieve Results</button></div>
+                <div class="text-center"><button class ="buttonSubmit" type="submit" name='Submit' value='Submit'>Submit</button></div>
               </form>
             </div>
           </div>
